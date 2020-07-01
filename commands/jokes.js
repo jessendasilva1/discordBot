@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'joke',
+    name: '!joke',
     description: 'tells a random joke',
     jokes: ['Evan leaves maple syrup on his window sill, thus ANTS APPEAR!', 
             'Carter Douds Dentist goggles', 
@@ -11,7 +11,7 @@ module.exports = {
     execute(msg, args){
         //change to be dynamic to an arbitrary list
         const choice = Math.floor(Math.random() * 7);
-        msg.reply(`Heres a joke: ${jokes[choice]}`);
-        //msg.channel.send('pong')
+        msg.channel.send(`Heres a joke: ${this.jokes[choice]}`);
+        //msg.reply('pong')
     }
 }

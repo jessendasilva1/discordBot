@@ -4,14 +4,15 @@
   "description": "example discord bot",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon forever start index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "forever": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
